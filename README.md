@@ -41,7 +41,7 @@ TO EXECUTE:
 - Run ```@FOR /f "tokens=*" %i IN ('docker-machine env default') DO @%i```
 - cd to directory with Vagrantfile 
 - make sure you have a folder pythonFiles with app.py and requirements
-		(or change HOST_SYNC_FOLDER in Vagrantfile)
+		(or change folders in Dockerfile)
 - ```vagrant up```
 - Have to forward port from Vagrant host to Host Machine:
     - Run the command ```VBoxManage controlvm "boot2docker-vm" natpf1 "tcp-port8000,tcp,,8000,,8000"```
